@@ -1,0 +1,15 @@
+div {
+    background-color: beige;
+}
+
+#unique-id-name {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 50px;
+}
+
+.class-name {
+    background-color: cadetblue;
+    border: 1px solid gray;
+    margin: 10px;
+}
