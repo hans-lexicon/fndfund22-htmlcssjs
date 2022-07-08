@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --font-play: 'Play', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    --color-white: #ffffff;
+    --color-white-gray: #f6f6f6;
+    --color-light-gray:  #eeeeee;
+    --color-gray: #e3e3e3;
+    --color-dark-gray: #aaaaaa;
+    --color-instock: #64cb83;
+    --color-outofstock: #fe4545;
+    --color-theme: #20d3c2;
+    --color-dark-theme: #0e153d;
+}
+
+.bg-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+}
+
+
+.bg-dark-theme {
+    background-color: var(--color-dark-theme);
+    color: var(--color-white);
+}
+    .bg-dark-theme a {
+        color: var(--color-theme);
+        text-decoration: none;
+    }
+        .bg-dark-theme a:hover {
+            color: var(--color-white);
+        }
+
+
+.top-menu .container {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-menu .site-settings a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 10px;
+}
+    .top-menu .site-settings a:hover {
+        color: var(--color-dark-theme);
+    }
+
+    .top-menu .site-settings a > i {
+        margin-left: 5px;
+    }
+
+
+
+.top-menu .links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+    .top-menu .links a {
+        color: var(--color-white);
+        text-decoration: none;
+        padding: 5px 10px;  
+    }
+        .top-menu .links a:hover {
+            color: var(--color-dark-theme);
+        }
+
+    .top-menu .links .socialmedia {
+        margin-left: 30px;
+    }
+        .top-menu .links .socialmedia > a {
+            padding: 5px 12px;
+        }
+
