@@ -1,0 +1,35 @@
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grand_parent { padding: 40px; border: 1px solid black; margin: 20px; }
+#parent  { background-color: white; height: 400px; width: 400px; border: 1px solid black;}
+#child_1 { background-color: lightpink; }
+#child_2 { background-color: lightblue; }
+
+
+#grand_parent {
+    position: relative;
+}
+
+#parent {
+    position: relative;
+}
+
+#child_1 {
+    position: static;       /* standard positionen */
+    position: relative;     /* relativ till sin egen position (reserverar sitt utrymme)*/
+    position: absolute;     /* frikopplad från resten av flödet (reserverar inte sitt utrymme) och baserar sig på en relativ position */
+    /* position: fixed;
+    position: sticky; */
+
+    top: -20px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
