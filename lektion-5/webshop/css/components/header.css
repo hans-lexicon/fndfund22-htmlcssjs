@@ -1,0 +1,79 @@
+.header {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--color-gray-2);
+}
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .logotype {
+        flex: 2;    
+    }
+        .header .logotype img {
+            height: 23px;
+        }
+
+    .header .search {
+        flex: 3;  
+        position: relative;  
+        height: 45px;
+        width: 100%;
+    }
+        .header .search input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid var(--color-gray-2);
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            padding-left: 20px;
+            outline: none;
+        }
+
+        .header .search i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            height: 100%;
+            width: 50px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 0 25px 25px 0;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+    .header .webshop_menu {
+        flex: 2;  
+        display: flex;
+        justify-content: end;  
+    }
+        .header .webshop_menu a {
+            text-decoration: none;
+            color: var(--color-dark-theme);
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .header .webshop_menu a:hover {
+            color: var(--color-theme);
+        }
+
+            .header .webshop_menu a i {
+                font-size: 1.45rem;
+                margin-right: 0.4rem;
+                position: relative;
+            }
+            
+            .header .webshop_menu a i .badge {
+                font-size: 0.6rem;
+                background-color: var(--color-theme);
+                position: absolute;
+                top: -5px;
+                left: 20px;
+            }

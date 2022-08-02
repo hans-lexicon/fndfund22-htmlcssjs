@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;  
+}
+
+.container {
+    height: 98vh;
+    position: relative;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    animation: slide-forwardbackward 20s ease-in-out infinite;
+    position: relative;
+}
+
+
+@keyframes slide-around {
+    0%      { top: 0; left:0; }
+    25%     { top: 0; left: calc(100% - 100px); }
+    50%     { top: calc(100% - 100px); left: calc(100% - 100px); }
+    75%     { top: calc(100% - 100px); left: 0; }
+    100%    { top: 0; left:0; }
+}
+
+@keyframes slide-forwardbackward {
+    0%      { top: 0; left: 0; }
+    50%     { top: 0; left: calc(100% - 100px); }
+    100%    { top: 0; left: 0; }
+}

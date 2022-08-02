@@ -1,0 +1,106 @@
+:root {
+    --font-play: 'Play', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --color-white: #ffffff;
+    --color-white-1: #f6f6f6;
+    --color-gray: #aaaaaa;
+    --color-gray-1: #cccccc;
+    --color-gray-2: #e3e3e3;
+    --color-gray-3:  #eeeeee;
+
+    --color-instock: #64cb83;
+    --color-outofstock: #fe4545;
+    --color-theme: #20d3c2;
+    --color-theme-light: #edfcfa;
+    --color-dark-theme: #0e153d;
+
+    --border-radius-small: 8px;
+}
+
+html, body {
+    font-family: var(--font-roboto); 
+    font-weight: var(--font-weight-regular);
+    color: var(--color-dark-theme);   
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    padding: 0.75rem 1.75rem;
+}
+
+.btn-special-offer {
+    padding: 0.5rem 1.25rem;
+}
+
+.btn-menu {
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.btn-theme {
+   background-color: var(--color-theme);
+   color: var(--color-white); 
+   border: none;
+}
+.btn-theme:hover,
+.btn-theme:focus {
+    background-color: var(--color-dark-theme);
+    color: var(--color-white); 
+    border: none;  
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-theme); 
+    border: none;
+ }
+ .btn-white:hover,
+ .btn-white:focus {
+     background-color: var(--color-dark-theme);
+     color: var(--color-white); 
+     border: none;  
+ }
+
+.text-theme {
+    color: var(--color-theme);
+}
+
+.box {
+    background-color: var(--color-gray-1);
+    border-radius: var(--border-radius-small);
+    position: relative;
+}
+    .box .box-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-dark-theme);
+        color: var(--color-theme);
+        width: 50%;
+        border-radius: 0 8px 0 8px;
+        padding: 0.5rem 1rem;
+        font-weight: var(--font-weight-medium);
+        font-size: 1rem;
+    }
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+    .section-title h1 {
+        font-family: var(--font-play);
+        font-weight: (--font-weight-bold);
+        font-size: 36pt;
+    }
+    .section-title p {
+        margin: 1rem 0;
+    }

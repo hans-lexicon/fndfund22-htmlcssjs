@@ -1,0 +1,59 @@
+.card {
+    transition: box-shadow 0.25s ease-in-out;  
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-color: #ececf2;
+}
+
+.card-background {
+    height: 100%;
+    width: 100%;
+    background-color: #0e153d;
+    opacity: 0.90;
+    position: absolute;
+    transform: translateY(340px);
+    transition: 0.3s ease-in-out;
+}
+.card:hover .card-background {
+    transform: translateY(0px);
+}
+
+.card-body {
+    transform: translateY(340px);
+    color:#f8f8fe !important;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.card:hover .card-body {
+    transform: translateY(200px);
+}
+
+.instock {
+    height: 20px;
+    width: 20px;
+    background-color: #82d8c6;
+    border-radius: 50%;    
+}
+
+.card-menu {
+    color: #aaaaaa;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    right: -80%;
+    font-size: 1.2rem;
+    padding: 1rem;
+
+}
+
+.menu-items {
+
+}
+
+.menu-item {
+
+}
+

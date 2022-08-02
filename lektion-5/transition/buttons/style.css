@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-theme {
+    padding: 20px 35px;
+    font-size: 2rem;
+    background-color: lightseagreen;
+    color: rgb(237, 255, 254);
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+.btn-theme:hover {
+    background-color: rgb(20, 104, 99);
+    cursor: pointer;
+}
+.btn-theme:focus {
+    background-color: rgb(7, 40, 37);
+}
