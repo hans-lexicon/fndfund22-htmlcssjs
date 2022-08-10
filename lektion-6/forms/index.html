@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid mt-3">
+
+
+        <form novalidate>
+            <div class="mb-3">
+                <label for="firstName">Förnamn</label>
+                <input id="firstName" type="text" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="lastName">Efternamn</label>
+                <input id="lastName" type="text" disabled>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">E-postadress</label>
+                <input id="email" type="email" readonly>
+            </div>
+
+            <div class="mb-3">
+                <label for="password">Lösenord</label>
+                <input id="password" type="password">
+            </div>
+
+            <div class="mb-3">
+                <label for="language">Språk</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="sv-se">Svenska</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input id="allowNewsletter" type="checkbox">
+                <label for="allowNewsletter">Jag vill få nyhetsbrev</label>
+            </div>
+
+            <div class="mb-3">
+                <div>Nybörjare?</div>
+                <input id="beginner_yes" name="beginner" value="yes" type="radio">
+                <label for="beginner_yes">JA</label>
+
+                <input id="beginner_no" name="beginner" value="no" type="radio">
+                <label for="beginner_no">NEJ</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="message">Meddelande</label>
+                <textarea id="message"></textarea>
+            </div>
+
+
+            <div class="mb-5">
+                <input type="submit" value="SKICKA" disabled>
+                <button type="submit">SKICKA</button>
+            </div>
+        </form>
+
+
+
+    </div>
+</body>
+</html>
