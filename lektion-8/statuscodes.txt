@@ -1,0 +1,15 @@
+Normala meddelanden:
+200     OK              Allt gick som det skulle vi skickar tillbaka någon form av data/information
+201     CREATED         Används när vi skapar nya saker ex. en ny användare
+204     NO CONTENT      Används när vi gjort något men inte skickar tillbaka någon data/information
+
+Felmeddelanden - klienten/webbläsaren/användaren:
+400     BAD REQUEST     Du har skickat med felaktig information
+401     UNAUTHORIZED    Du har inte loggat in och kommer därför inte åt en viss resurs/sida     
+403     FORBIDDEN       Du är inloggad men du har inte rätt behörighet (ex. du är inte administratör)
+404     NOT FOUND       Hittar inte det du söker efter (ex. en sida/en produkt/en användare)
+409     CONFLICT        När det redan finns en sak (ex. en användare med samma e-postadress finns redan)
+
+Felmeddelanden - server/webservern/databasserver/ingen kontakt mellan servrar etc.:
+500     INTERNAL SERVER ERROR       När webbservern ligger nere eller förbindelser mellan databas och server inte fungerar
+503     SERVICE UNAVAILABLE         När servern underhålls
